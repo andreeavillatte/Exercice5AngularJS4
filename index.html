@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <script src="https://code.angularjs.org/1.6.9/angular.js"></script> -->
+  <script src="assets/js/angular.js"></script>
+  <title>Exercice5AngularJS4</title>
+</head>
+
+<body>
+  <!-- container Bootstrap -->
+  <div class="container">
+    <!-- header -->
+    <header>
+
+    </header>
+    <!-- main -->
+    <main>
+      <div class="card-deck mb-3">
+        <div class="card bg-primary">
+          <div class="card-body bg-warning">
+            <div class="card-text p-2 bg-primary test">
+              <h1 class="card-title font-weight-bolder text-center text-md-center">Exercice 5 <br>AngularJS<br> Partie 4s</h1>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-warning">
+          <div class="card-body p-2 bg-success">
+            <p class="card-text p-2 bg-primary test">Faire une page HTML contenant un bouton Afficher et un bouton
+              Cacher. Au clic sur l'un ou sur l'autre afficher ou non un paragraphe de votre choix.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+      <div ng-app="MyApp" ng-controller="HideShowCtrl" class="row">
+        <div class="mb-2 col-md-6 offset-md-5 col-6 offset-3">
+          <!-- We are attaching the ng-click event directive to the button element. Over here we are referencing a function called "ShowHide" which is defined in our controller – DemoController. -->
+          <input type="button" class="shadow" value="Show" ng-click="Show()" />
+          <input type="button" class="shadow" value="Hide" ng-click="Hide()" />
+        </div>
+        <!-- We are attaching the ng-show attribute to a div tag which contains the text. This is the tag which we are going to show/hide based on the ng-show attribute. -->
+        <div ng-show="IsVisible" ng-hide="IsVisible" class="col-12 col-md-10 offset-md-1 text-justify test">Lorem ipsum
+          dolor sit amet
+          consectetur adipisicing elit. Deserunt temporibus, illum quisquam quam error nihil enim ab, molestias amet
+          dolorum mollitia saepe facilis ducimus possimus maxime. Animi labore consequatur placeat! Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Laudantium quas quos odit, velit adipisci nesciunt quasi dicta, ea
+          non mollitia eius architecto iusto delectus, corporis consequatur magni rem numquam nobis! Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Quisquam, illum. Asperiores natus deserunt enim autem provident
+          placeat quae. Quis officiis corrupti at perspiciatis eveniet expedita, obcaecati numquam nostrum neque
+          quisquam.
+        </div>
+      </div>
+    </div>
+    </main>
+    <!-- footer -->
+    <footer>
+
+    </footer>
+  </div>
+  <!-- scripts JQuery, Popper, Angular et Bootstrap-->
+  <script src="assets/js/jquery-3.4.0.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <!-- mon script principal -->
+  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
